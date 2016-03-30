@@ -1,6 +1,6 @@
 {
   "name": "express-recaptcha-rest",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Protect public routes from spam through recaptcha",
   "main": "index.js",
   "scripts": {
