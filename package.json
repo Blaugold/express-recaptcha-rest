@@ -1,0 +1,28 @@
+{
+  "name": "express-recaptcha-rest",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/**spec.js",
+    "tdd": "mocha ./test/**/**spec.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blaugold/express-recaptcha-rest.git"
+  },
+  "author": "Gabriel Terwesten <gabriel@terwesten.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blaugold/express-recaptcha-rest/issues"
+  },
+  "homepage": "https://github.com/Blaugold/express-recaptcha-rest#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "rewire": "^2.5.1"
+  },
+  "dependencies": {
+    "request": "^2.69.0"
+  }
+}
