@@ -2,10 +2,14 @@
   "name": "express-recaptcha-rest",
   "version": "0.1.0",
   "description": "Protect public routes from spam through recaptcha",
+  "keywords": ["express", "middleware", "recaptcha", "rest", "spam"],
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/**/**spec.js",
     "tdd": "mocha ./test/**/**spec.js -w"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "repository": {
     "type": "git",
