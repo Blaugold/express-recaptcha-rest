@@ -18,11 +18,19 @@
   },
   "homepage": "https://github.com/Blaugold/express-recaptcha-rest#readme",
   "devDependencies": {
+    "body-parser": "^1.15.0",
     "chai": "^3.5.0",
+    "express": "^4.13.4",
     "mocha": "^2.4.5",
-    "rewire": "^2.5.1"
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
+    "supertest": "^1.2.0"
   },
   "dependencies": {
-    "request": "^2.69.0"
+    "joi": "^8.0.5",
+    "lodash": "^4.6.1",
+    "request": "^2.69.0",
+    "verror": "^1.6.1"
   }
 }
