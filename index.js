@@ -17,6 +17,7 @@ let Joi = require('joi')
 let url = require('url')
 let VError = require('verror')
 let _ = require('lodash')
+let debug = require('debug')('express-recaptcha-rest')
 
 /**
  * =================================================================================================
@@ -54,7 +55,6 @@ module.exports = function (options) {
     }
 
     const recaptchaResponse = getRecaptchaResponse(options.field, req)
-
     if (!recaptchaResponse) {
       return res.status(400).send({
         status: 400,
@@ -62,12 +62,15 @@ module.exports = function (options) {
       })
     }
 
-    request(getUri(
+    const verificationUri = getUri(
       options.url,
       options.secret,
       recaptchaResponse,
       req.ip
-    ),
+    )
+    debug(verificationUri)
+    
+    request(verificationUri,
       function (err, verifyRes, body) {
         if (err) {
           const error = new VError(err, 'verification request failed')
