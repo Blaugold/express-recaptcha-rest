@@ -1,4 +1,5 @@
 # express-recaptcha-rest
+*Protect public routes from spam through recaptcha*
 
 # errors
 The following errors will be passed to next as the only argument.
